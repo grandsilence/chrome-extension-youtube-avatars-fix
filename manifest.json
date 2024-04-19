@@ -1,0 +1,22 @@
+{
+  "name": "YouTube Avatars Fix",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "Fixes YouTube avatar images loading just redirecting blocked yt3.ggpht.com to allowed yt4.ggpht.com.",
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules_1.json"
+      }
+    ]
+  },
+  "permissions": [
+    "declarativeNetRequestWithHostAccess"
+  ],
+  "host_permissions": [
+    "*://www.youtube.com/*",
+    "*://yt3.ggpht.com/*"
+  ]
+}
